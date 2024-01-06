@@ -8,10 +8,10 @@ function Card({ imageUrl, text, imageName}) {
                     <div className="flex flex-col justify-center items-center">
                         {/* Image */}
                         <div>
-                            <Image width={350} height={400} src={imageUrl} alt={imageName}></Image>  
+                            <Image width={200} height={250} src={imageUrl} alt={imageName}></Image>  
                         </div>
                         {/* Card Content */}
-                        <div className="text-center text-lg md:text-xl overflow-hidden pt-4">
+                        <div className="text-start text-lg md:text-xl overflow-hidden pt-4">
                             <p>{text}</p>
                         </div>
                     </div>
