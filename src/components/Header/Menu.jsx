@@ -1,7 +1,7 @@
 function Menu() {
     return (
         <ul>
-            <li className="text-yellow-500 hover:text-white cursor-pointer">Casas</li>
+            <li className="text-yellow-500 hover:text-white cursor-pointer"><a href="#casas">Casas</a></li>
             <li className="text-yellow-500 hover:text-white cursor-pointer">Lugares</li>
             <li className="text-yellow-500 hover:text-white cursor-pointer">Personajes</li>
             <li className="text-yellow-500 hover:text-white cursor-pointer">Hechizos</li>

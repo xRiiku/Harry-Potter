@@ -6,7 +6,7 @@ import ravenclaw from "@/images/Houses/ravenclaw.webp"
 
 function Houses() {
     return (
-        <div className="parent grid grid-cols-1 md:grid-cols-2">
+        <div id="casas" className="parent grid grid-cols-1 md:grid-cols-2">
         {/* CARD 1 */}
         <div className="flex justify-center items-center mt-10 p-8">
             <div className="text-2xl w-[350px] md:w-[550px] h-full border-2 border-yellow-500 p-6">
