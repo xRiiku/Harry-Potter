@@ -9,7 +9,7 @@ function Logo() {
       width={150}
       height={80}
       preserveAspectRatio="xMidYMid meet"
-      className="text-white group-hover:text-yellow-500 cursor-pointer"
+      className="text-yellow-500 group-hover:text-white cursor-pointer"
     >
       <g transform="translate(0.000000,273.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
         <path

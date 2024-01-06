@@ -2,7 +2,7 @@ function LoginIcon() {
     return (
       <div className='group'>
   <svg viewBox="0 0 24 24" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-    className="text-white group-hover:text-yellow-500 cursor-pointer">
+    className="text-yellow-500 group-hover:text-white cursor-pointer">
     <g id="SVGRepo_bgCarrier" strokeWidth="0" />
     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
     <g id="SVGRepo_iconCarrier">
