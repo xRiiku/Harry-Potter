@@ -6,7 +6,7 @@ import Menu from "./Menu"
 function Header() {
 
     return (
-        <header className="py-3 px-10 flex items-center fixed top-0 w-screen justify-between">
+        <header className="py-3 px-10 flex items-center fixed top-0 w-screen justify-between z-40">
             <div className="flex flex-grow basis-0">
                 <Logo/>
             </div>
