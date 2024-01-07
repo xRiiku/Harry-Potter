@@ -1,5 +1,7 @@
 import ContextProvider from '@/context/context'
 import './globals.css'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export const metadata = {
   title: 'HP-Fans',
@@ -14,8 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className='overflow-x-hidden w-screen h-screen'>
         <ContextProvider>
+        <Header/>
           {children}
         </ContextProvider> 
+        <Footer/>
       </body>
     </html>
   )
