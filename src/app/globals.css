@@ -12,3 +12,17 @@ body {
   background-color: black;
   font-family: 'harry-potter', sans-serif;
 }
+
+/* Houses cards */
+.container{
+  padding: 15px;
+}
+.card{
+  height: 100%;
+  padding: 6px;
+}
+.card-text{
+  max-width: 60ch;
+  margin-top: 1rem;
+  padding: 10px;
+}

@@ -1,25 +1,22 @@
 import Image from "next/image";
 
-function Card({ imageUrl, text, imageName}) {
+function Card({ imageUrl, text, imageName }) {
     return (
         <div className="container">
-            <div className="flex justify-center items-center mt-10 p-8 h-full">
-                <div className="text-2xl w-[350px] md:w-[550px] h-full border-2 border-yellow-500 p-6">
-                    <div className="flex flex-col justify-center items-center">
-                        {/* Image */}
-                        <div>
-                            <Image width={200} height={250} src={imageUrl} alt={imageName}></Image>  
-                        </div>
-                        {/* Card Content */}
-                        <div className="text-start text-lg md:text-xl overflow-hidden pt-4">
-                            <p>{text}</p>
-                        </div>
+            <div className="card">
+                <div className="flex flex-col justify-center items-center p-6">
+                    {/* Image */}
+                    <div>
+                        <Image width={200} height={250} src={imageUrl} alt={imageName}></Image>
+                    </div>
+                    {/* Card Content */}
+                    <div className="text-start text-xl">
+                        <p className="card-text">{text}</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        );
-    }
-    export default Card;
+    );
+}
+export default Card;
     
