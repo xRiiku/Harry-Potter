@@ -31,9 +31,9 @@ function Footer() {
             <hr className="my-6 border-yellow-200 sm:mx-auto lg:my-8" />
             <span className="block text-sm text-yellow-500 text-center">
             © {currentYear}{" "}
-            <a href="/" className="hover:text-white">
+            <span>
                 Hecho por Rikudev™
-            </a>
+            </span>
             </span>
         </div>
         </footer>
