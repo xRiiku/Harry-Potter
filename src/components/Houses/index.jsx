@@ -6,7 +6,7 @@ import ravenclaw from "@/images/Houses/ravenclaw.webp"
 
 function Houses() {
     return (
-        <div id="casas" className="grid grid-cols-1 md:grid-cols-2 mt-20 lg:mt-10">
+        <div id="casas" className="grid grid-cols-1 md:grid-cols-2 mt-20 lg:mt-10 w-screen">
         {/* CARD 1 */}
                 <Card 
                     imageUrl={griffindor}
