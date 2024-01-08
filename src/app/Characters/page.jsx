@@ -5,7 +5,7 @@ import voldemort from "@/images/Characters-Selection/voldemort.webp"
 
 function Characters() {
     return (
-        <div className="p-10 mt-28 flex justify-center">
+        <div className="w-screen h-screen p-10 mt-28 flex justify-center">
         <div className="flex flex-row gap-3 md:gap-10 p-6">
             {/* Profesores */}
             <div>
