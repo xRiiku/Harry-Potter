@@ -14,7 +14,7 @@ function NavMobile() {
                 >
                     <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#casas"> Casas <img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a> </li>
                     <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#">Lugares<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
-                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#">Personajes<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
+                    <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="/Characters">Personajes<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
                     <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#">Hechizos<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
                     <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#">Varitas<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
                     <li onClick={() => toggleMenu(isMenuOpen)}><a className="hover:bg-slate-100" href="#">Quiz<img className="h-5" alt="arrow icon" src="/arrow-icon.svg"/></a></li>
