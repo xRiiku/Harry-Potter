@@ -11,7 +11,7 @@ function Characters() {
     const { isSelectorOpen, selectorFunction } = useContext(AppContext);
 
     return (
-        <div className="w-screen h-screen p-10 mt-28 flex justify-center">
+        <div className="w-screen h-screen p-10 mt-28 flex justify-start items-center flex-col">
             <div className="flex gap-3 md:gap-10 p-6">
                 {/* Profesores */}
                 <div>
@@ -40,12 +40,11 @@ function Characters() {
                             <p className="text-xl text-yellow-500">Villanos</p>
                         </div>
                 </div>
-                
-                {isSelectorOpen && (
-                <div>HOLAAAAAA</div>
-                )}
 
             </div>
+            {isSelectorOpen && (
+                <div>HOLAAAAAA</div>
+                )}
         </div>
 
         
