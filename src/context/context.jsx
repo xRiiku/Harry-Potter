@@ -14,17 +14,37 @@ export default function ContextProvider ({ children }) {
         setIsMenuOpen(!prev)
     }
   //Estado para el Selector de personaje (Profesor, alumno, villano)
-    const [isSelectorOpen, setIsSelectorOpen] = useState(false)
+    const [isProfesorOpen, setIsProfesorOpen] = useState(false)
+    const [isStudentOpen, setIsStudentOpen] = useState(false)
+    const [isVillainOpen, setIsVillainOpen] = useState(false)
 
-    function selectorFunction (prev) {
-        setIsSelectorOpen(!prev)
+    function profesorFunction (prev) {
+        setIsProfesorOpen(!prev)
+        setIsStudentOpen(false)
+        setIsVillainOpen(false)
+    }
+
+    function studentFunction (prev) {
+        setIsStudentOpen(!prev)
+        setIsProfesorOpen(false)
+        setIsVillainOpen(false)
+    }
+
+    function villainFunction (prev) {
+        setIsVillainOpen(!prev)
+        setIsStudentOpen(false)
+        setIsProfesorOpen(false)
     }
 
     const contextValue = {
         isMenuOpen,
         toggleMenu,
-        isSelectorOpen,
-        selectorFunction
+        isProfesorOpen,
+        isStudentOpen,
+        isVillainOpen,
+        profesorFunction,
+        studentFunction,
+        villainFunction
     };
 
     return (

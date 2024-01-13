@@ -8,14 +8,14 @@ import { useContext } from "react"
 
 function Characters() {
 
-    const { isSelectorOpen, selectorFunction } = useContext(AppContext);
+    const { isProfesorOpen, isStudentOpen, isVillainOpen, profesorFunction, studentFunction, villainFunction } = useContext(AppContext);
 
     return (
         <div className="w-screen h-screen p-10 mt-28 flex justify-start items-center flex-col">
             <div className="flex gap-3 md:gap-10 p-6">
                 {/* Profesores */}
                 <div>
-                    <div className="w-[100px] h-[100px]flex flex-col cursor-pointer" onClick={() => selectorFunction(isSelectorOpen)}>
+                    <div className="w-[100px] h-[100px] flex flex-col cursor-pointer hover:scale-110" onClick={() => profesorFunction(isProfesorOpen)}>
                         <Image src={dumbledore} alt="Dumbledore"/>
                     </div>
                         <div className="mt-4 text-center">
@@ -24,7 +24,7 @@ function Characters() {
                 </div>
                 {/* Alumnos */}
                 <div>
-                    <div className="w-[100px] h-[100px]flex flex-col">
+                    <div className="w-[100px] h-[100px] flex flex-col cursor-pointer hover:scale-110" onClick={() => studentFunction(isStudentOpen)}>
                         <Image src={harry} alt="Harry"/>
                     </div>
                         <div className="mt-4 text-center">
@@ -33,7 +33,7 @@ function Characters() {
                 </div>
                 {/* Villanos */}
                 <div>
-                    <div className="w-[100px] h-[100px] flex flex-col">
+                    <div className="w-[100px] h-[100px] flex flex-col cursor-pointer hover:scale-110" onClick={() => villainFunction(isVillainOpen)}>
                         <Image src={voldemort} alt="Voldemort"/>
                     </div>
                         <div className="mt-4 text-center">
@@ -42,9 +42,15 @@ function Characters() {
                 </div>
 
             </div>
-            {isSelectorOpen && (
-                <div>HOLAAAAAA</div>
-                )}
+            {isProfesorOpen && (
+                <div>Profesores</div>
+            )}
+            {isStudentOpen && (
+                <div>Alumnos</div>
+            )}
+            {isVillainOpen && (
+                <div>Villanos</div>
+            )}
         </div>
 
         
